@@ -1,8 +1,8 @@
-package com.pequla.bot.programmer;
+package com.pequla.bot;
 
-import com.pequla.bot.programmer.modules.CommandModule;
-import com.pequla.bot.programmer.modules.JoinModule;
-import com.pequla.bot.programmer.modules.LeaveModule;
+import com.pequla.bot.modules.CommandModule;
+import com.pequla.bot.modules.JoinModule;
+import com.pequla.bot.modules.LeaveModule;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Activity;

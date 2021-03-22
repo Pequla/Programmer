@@ -1,4 +1,4 @@
-package com.pequla.bot.programmer.modules.commands.meme;
+package com.pequla.bot.modules.commands.meme;
 
 public class Meme {
     private final String link;

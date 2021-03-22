@@ -1,7 +1,7 @@
-package com.pequla.bot.programmer.modules.commands.meme;
+package com.pequla.bot.modules.commands.meme;
 
-import com.pequla.bot.programmer.Main;
-import com.pequla.bot.programmer.modules.commands.GuildCommand;
+import com.pequla.bot.modules.commands.GuildCommand;
+import com.pequla.bot.Main;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.TextChannel;

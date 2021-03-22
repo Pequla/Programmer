@@ -1,9 +1,10 @@
-package com.pequla.bot.programmer.modules;
+package com.pequla.bot.modules;
 
-import com.pequla.bot.programmer.modules.commands.GuildCommand;
-import com.pequla.bot.programmer.modules.commands.joke.JokeCommand;
-import com.pequla.bot.programmer.modules.commands.meme.MemeCommand;
-import com.pequla.bot.programmer.modules.commands.TestCommand;
+import com.pequla.bot.modules.commands.AnnounceCommand;
+import com.pequla.bot.modules.commands.GuildCommand;
+import com.pequla.bot.modules.commands.joke.JokeCommand;
+import com.pequla.bot.modules.commands.meme.MemeCommand;
+import com.pequla.bot.modules.commands.TestCommand;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import org.jetbrains.annotations.NotNull;
@@ -21,13 +22,14 @@ public class CommandModule extends ListenerAdapter {
         map.put("!testus", new TestCommand());
         map.put("!meme", new MemeCommand());
         map.put("!joke", new JokeCommand());
+        map.put("!announce", new AnnounceCommand());
     }
 
     @Override
     public void onGuildMessageReceived(@NotNull GuildMessageReceivedEvent event) {
         if (!event.getAuthor().isBot()) {
             String[] message = event.getMessage().getContentRaw().trim().split("\\s+");
-            GuildCommand command = map.get(message[0]);
+            GuildCommand command = map.get(message[0].toLowerCase());
             if (command != null) {
                 command.execute(event.getMember(), event.getChannel(), Arrays.copyOfRange(message, 1, message.length));
             }

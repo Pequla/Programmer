@@ -1,6 +1,6 @@
-package com.pequla.bot.programmer.modules;
+package com.pequla.bot.modules;
 
-import com.pequla.bot.programmer.Main;
+import com.pequla.bot.Main;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.entities.TextChannel;

@@ -1,4 +1,4 @@
-package com.pequla.bot.programmer.modules.commands.joke;
+package com.pequla.bot.modules.commands.joke;
 
 public class Joke {
     private final String setup;
