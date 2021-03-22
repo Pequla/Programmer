@@ -10,8 +10,10 @@ Programmer is a discord bot designed for my friend zone study room, it can fetch
 
 ### Announcements
 
-- `!announce set title` - Sets title
-- `!announce set message` - Sets message body
+Only one person at the time can generate one announcement
+
+- `!announce set title <title-text>` - Sets title
+- `!announce set message <message-text>` - Sets message body
 - `!announce test` - See the current look of the message before sending
 - `!announce send` - Sends it
 - `!announce help` - Links to this page :)
